@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif; /* Moon Knight inspired font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background: linear-gradient(45deg, #000000, #333333);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  border: 1px solid #ffd700;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  color: #ffd700;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+nav li a:hover {
+  background: linear-gradient(45deg, #ffd700, #ffffff);
+  color: #000000;
+  text-shadow: none;
+}
+
+.container {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  margin-bottom: 20px;
+  border: 1px solid #ffd700;
+}
+
+h1 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: linear-gradient(45deg, #333333, #1a1a1a);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #ffd700;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  border-left-color: #ffffff;
+}
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: 0 0 3px rgba(255, 215, 0, 0.2);
+}
+
+li a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+button {
+  background: linear-gradient(45deg, #ffd700, #ffffff);
+  color: #000000;
+  border: 1px solid #ffd700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ffffff, #ffd700);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 5px;
+  background-color: #333333;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.status-available {
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.status-borrowed {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+}
+
+/* Moon Knight inspired crescent moon background effect */
+.container::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
